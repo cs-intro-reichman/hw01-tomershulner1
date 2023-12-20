@@ -17,7 +17,7 @@ public class GenThree {
 		int second = (int)((Math.random() * range) + lower_limit);
 		int third = (int)((Math.random() * range) + lower_limit);
 		
-		int minimal = Math.min(Math.min(a, b), c);
+		int minimal = Math.min(Math.min(first, second), third);
 		
 		System.out.println(first);
 		System.out.println(second);
