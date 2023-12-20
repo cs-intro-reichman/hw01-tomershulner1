@@ -4,27 +4,24 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
-		int first_limit = Integer.parseInt(args[0]);
-		int second_limit = Integer.parseInt(args[1]);
-		int range
-		int lower_limit;
+		int a = Integer.parseInt(args[0]);
+		int b = Integer.parseInt(args[1]);
 		
-		if (first_limit < second_limit) {
-			range = second_limit - first_limit;
-			lower_limit = first_limit;
-		}
-		else {
-			range = first_limit - second_limit;
-			higher_limit = second_limit;
-		}
+		// Finding the lower and higher limit 
+		int higher_limit = Math.max(a, b);
+		int lower_limit = Math.min(a, b);
 		
-		int a = (int)((Math.random() * range) + lower_limit);
-		int b = (int)((Math.random() * range) + lower_limit);
-		int c = (int)((Math.random() * range) + lower_limit);
+		int range = higher_limit - lower_limit;
+		
+		int first = (int)((Math.random() * range) + lower_limit);
+		int second = (int)((Math.random() * range) + lower_limit);
+		int third = (int)((Math.random() * range) + lower_limit);
 		
 		int minimal = Math.min(Math.min(a, b), c);
 		
-		System.out.println(a + "\n" + b + "\n" + c);
+		System.out.println(first);
+		System.out.println(second);
+		System.out.println(third);
 		System.out.println("The minimal generated number was " + minimal);	
 	}
 }
