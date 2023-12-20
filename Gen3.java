@@ -7,9 +7,9 @@ public class Gen3 {
 		int lower_limit = Integer.parseInt(args[0]);
 		int higher_limit = Integer.parseInt(args[1]);
 		
-		int a = (int) ((Math.random() * (higher_limit - lower_limit)) + lower_limit);
-		int b = (int) ((Math.random() * (higher_limit - lower_limit)) + lower_limit);
-		int c = (int) ((Math.random() * (higher_limit - lower_limit)) + lower_limit);
+		int a = (int) ((Math.random() * (higher_limit - lower_limit)) + lower_limit + 1);
+		int b = (int) ((Math.random() * (higher_limit - lower_limit)) + lower_limit + 1);
+		int c = (int) ((Math.random() * (higher_limit - lower_limit)) + lower_limit + 1);
 		
 		int minimal = Math.min(Math.min(a, b), c);
 		
