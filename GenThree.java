@@ -11,7 +11,7 @@ public class GenThree {
 		int b = (int) ((Math.random() * (higher_limit - lower_limit)) + lower_limit);
 		int c = (int) ((Math.random() * (higher_limit - lower_limit)) + lower_limit);
 		
-		int minimal = Math.min(Math.min(a,b), c);
+		int minimal = Math.min(Math.min(a, b), c);
 		
 		System.out.println(a + " \r\n" + b + "\r\n" + c);
 		System.out.println("The minimal number is " + minimal);	
