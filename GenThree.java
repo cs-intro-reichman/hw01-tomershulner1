@@ -24,7 +24,7 @@ public class GenThree {
 		
 		int minimal = Math.min(Math.min(a, b), c);
 		
-		System.out.println(a + "\n" + b + "\n" + c)
+		System.out.println(a + "\n" + b + "\n" + c);
 		System.out.println("The minimal generated number was " + minimal);	
 	}
 }
